@@ -1,0 +1,22 @@
+[
+  {
+    "name": "The Blue Bloods",
+    "logo": "/uploads/logos/bluebloods.png"
+  },
+  {
+    "name": "BB Young Bloods",
+    "logo": "/uploads/logos/youngbloods.png"
+  },
+  {
+    "name": "Power Strikers",
+    "logo": "/uploads/logos/powerstrikers.png"
+  },
+  {
+    "name": "BB Lions",
+    "logo": "/uploads/logos/lions.png"
+  },
+  {
+    "name": "Duronto Express",
+    "logo": "/uploads/logos/duronto.png"
+  }
+]

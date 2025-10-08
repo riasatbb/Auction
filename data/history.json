@@ -1,111 +1,473 @@
 [
   {
     "action": "start",
-    "player": "Ripan Kumar Bachar",
-    "timestamp": "2025-10-05T10:28:46.764Z"
+    "player": "Shovan Saha",
+    "timestamp": "2025-10-08T06:35:38.783Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 200,
+    "newPrice": 250,
+    "timestamp": "2025-10-08T06:36:11.025Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 250,
+    "newPrice": 300,
+    "timestamp": "2025-10-08T06:36:11.194Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 300,
+    "newPrice": 350,
+    "timestamp": "2025-10-08T06:36:11.378Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 350,
+    "newPrice": 400,
+    "timestamp": "2025-10-08T06:36:11.543Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 400,
+    "newPrice": 450,
+    "timestamp": "2025-10-08T06:36:11.724Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 450,
+    "newPrice": 500,
+    "timestamp": "2025-10-08T06:36:11.890Z"
+  },
+  {
+    "action": "sold",
+    "player": "Shovan Saha",
+    "role": "Striker",
+    "team": "The Blue Bloods",
+    "finalPrice": 500,
+    "timestamp": "2025-10-08T06:36:16.808Z"
   },
   {
     "action": "start",
-    "player": "Riasat Ali",
-    "timestamp": "2025-10-05T10:29:08.201Z"
-  },
-  {
-    "action": "start",
-    "player": "Saleh Ahmed",
-    "timestamp": "2025-10-05T10:29:18.159Z"
-  },
-  {
-    "action": "start",
-    "player": "Avijit Roy",
-    "timestamp": "2025-10-05T10:35:58.875Z"
-  },
-  {
-    "action": "start",
-    "player": "Riasat Ali",
-    "timestamp": "2025-10-05T10:36:21.255Z"
-  },
-  {
-    "action": "start",
-    "player": "Avijit Roy",
-    "timestamp": "2025-10-05T10:38:18.820Z"
-  },
-  {
-    "action": "start",
-    "player": "S. M. Rayhanul Islam",
-    "timestamp": "2025-10-05T10:39:11.718Z"
-  },
-  {
-    "action": "start",
-    "player": "Harun-Or-Rashid",
-    "timestamp": "2025-10-05T10:40:26.068Z"
-  },
-  {
-    "action": "start",
-    "player": "M. A. Mamun Khan",
-    "timestamp": "2025-10-05T10:41:05.527Z"
+    "player": "Subrata Kumar Biswas",
+    "timestamp": "2025-10-08T09:32:02.040Z"
   },
   {
     "action": "start",
     "player": "Dabashis Roy",
-    "timestamp": "2025-10-05T10:44:32.141Z"
+    "timestamp": "2025-10-08T14:29:41.235Z"
   },
   {
-    "action": "start",
-    "player": "Ripan Kumar Bachar",
-    "timestamp": "2025-10-05T10:45:09.490Z"
+    "action": "increment",
+    "oldPrice": 200,
+    "newPrice": 250,
+    "timestamp": "2025-10-08T14:29:44.681Z"
   },
   {
-    "action": "start",
-    "player": "S. M. Rayhanul Islam",
-    "timestamp": "2025-10-05T10:50:45.006Z"
+    "action": "increment",
+    "oldPrice": 250,
+    "newPrice": 300,
+    "timestamp": "2025-10-08T14:29:44.876Z"
   },
   {
-    "action": "start",
-    "player": "Shovan Saha",
-    "timestamp": "2025-10-05T13:50:19.266Z"
+    "action": "increment",
+    "oldPrice": 300,
+    "newPrice": 350,
+    "timestamp": "2025-10-08T14:29:45.130Z"
   },
   {
-    "action": "sold",
-    "player": "Shovan Saha",
-    "role": "Striker",
-    "team": "The Blue Bloods",
-    "finalPrice": 200,
-    "timestamp": "2025-10-05T13:58:01.474Z"
+    "action": "increment",
+    "oldPrice": 350,
+    "newPrice": 400,
+    "timestamp": "2025-10-08T14:29:45.363Z"
   },
   {
-    "action": "sold",
-    "player": "Shovan Saha",
-    "role": "Striker",
-    "team": "The Blue Bloods",
-    "finalPrice": 200,
-    "timestamp": "2025-10-05T13:58:01.480Z"
+    "action": "increment",
+    "oldPrice": 400,
+    "newPrice": 450,
+    "timestamp": "2025-10-08T14:29:45.569Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 450,
+    "newPrice": 500,
+    "timestamp": "2025-10-08T14:29:45.785Z"
+  },
+  {
+    "action": "increment",
+    "oldPrice": 500,
+    "newPrice": 550,
+    "timestamp": "2025-10-08T14:29:45.993Z"
   },
   {
     "action": "start",
     "player": "Avijit Roy",
-    "timestamp": "2025-10-06T02:41:53.129Z"
+    "timestamp": "2025-10-08T16:00:33.983Z"
+  },
+  {
+    "action": "start",
+    "player": "Tonmoy Kumar Debnath",
+    "timestamp": "2025-10-08T16:01:19.010Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ali Gias",
+    "timestamp": "2025-10-08T16:01:40.919Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Saiful Islam",
+    "timestamp": "2025-10-08T16:01:56.702Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Saiful Islam",
+    "timestamp": "2025-10-08T16:02:21.016Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Saiful Islam",
+    "timestamp": "2025-10-08T16:02:34.917Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Saiful Islam",
+    "timestamp": "2025-10-08T16:02:44.457Z"
+  },
+  {
+    "action": "start",
+    "player": "Md Saiful Islam",
+    "timestamp": "2025-10-08T16:04:53.856Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Saiful Islam",
+    "timestamp": "2025-10-08T16:05:13.886Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ashraful Alam",
+    "timestamp": "2025-10-08T16:08:03.606Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ashraful Alam",
+    "timestamp": "2025-10-08T16:08:56.470Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ashraful Alam",
+    "timestamp": "2025-10-08T16:08:56.700Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ashraful Alam",
+    "timestamp": "2025-10-08T16:09:13.717Z"
+  },
+  {
+    "action": "start",
+    "player": "Amit Kumar Biswas",
+    "timestamp": "2025-10-08T16:31:54.751Z"
+  },
+  {
+    "action": "start",
+    "player": "Avijit Roy",
+    "timestamp": "2025-10-08T16:32:00.280Z"
+  },
+  {
+    "action": "start",
+    "player": "Balai Kumar Das",
+    "timestamp": "2025-10-08T16:32:08.084Z"
+  },
+  {
+    "action": "start",
+    "player": "Dabashis Roy",
+    "timestamp": "2025-10-08T16:32:13.331Z"
+  },
+  {
+    "action": "start",
+    "player": "Harun-Or-Rashid",
+    "timestamp": "2025-10-08T16:32:18.367Z"
+  },
+  {
+    "action": "start",
+    "player": "M. A. Mamun Khan",
+    "timestamp": "2025-10-08T16:32:23.392Z"
+  },
+  {
+    "action": "start",
+    "player": "Manash Biswas",
+    "timestamp": "2025-10-08T16:32:28.317Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Abdul Kuddus",
+    "timestamp": "2025-10-08T16:32:34.819Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Afzal Hossain",
+    "timestamp": "2025-10-08T16:32:40.139Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Alamgir Hossain",
+    "timestamp": "2025-10-08T16:32:47.209Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ali Gias",
+    "timestamp": "2025-10-08T16:32:50.976Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ashraful Alam",
+    "timestamp": "2025-10-08T16:32:59.735Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Ashraful Alam Ripon",
+    "timestamp": "2025-10-08T16:33:06.448Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Atiqur Rahman",
+    "timestamp": "2025-10-08T16:33:15.382Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Billal Hossain",
+    "timestamp": "2025-10-08T16:33:22.279Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Faruk Hossain",
+    "timestamp": "2025-10-08T16:33:32.260Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Kamrul Hasan",
+    "timestamp": "2025-10-08T16:33:37.215Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Mahafujur Rahman",
+    "timestamp": "2025-10-08T16:33:41.285Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Mahbubul Hasan (Miraz)",
+    "timestamp": "2025-10-08T16:33:51.726Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Mahmudul Hasan",
+    "timestamp": "2025-10-08T16:33:58.758Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Mizanur Rahman Mahaldar",
+    "timestamp": "2025-10-08T16:34:03.693Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Nafiul Karim",
+    "timestamp": "2025-10-08T16:34:07.903Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Nur Alam Hawladar",
+    "timestamp": "2025-10-08T16:34:11.602Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Rabiul Islam",
+    "timestamp": "2025-10-08T16:34:27.009Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Rasel Ahmed",
+    "timestamp": "2025-10-08T16:34:31.837Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Rezowan",
+    "timestamp": "2025-10-08T16:35:00.835Z"
+  },
+  {
+    "action": "start",
+    "player": "Md Saiful Islam",
+    "timestamp": "2025-10-08T16:35:05.832Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Saiful Islam",
+    "timestamp": "2025-10-08T16:35:15.386Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Shafiqul Islam",
+    "timestamp": "2025-10-08T16:35:26.345Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Shafikul Islam (Tonmoy)",
+    "timestamp": "2025-10-08T16:35:37.132Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Tareq Abdullah",
+    "timestamp": "2025-10-08T16:35:40.423Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Wahiduzzaman",
+    "timestamp": "2025-10-08T16:35:45.307Z"
+  },
+  {
+    "action": "start",
+    "player": "Mridul Kundu",
+    "timestamp": "2025-10-08T16:35:54.097Z"
+  },
+  {
+    "action": "start",
+    "player": "Nipesh Mondal",
+    "timestamp": "2025-10-08T16:35:58.502Z"
+  },
+  {
+    "action": "start",
+    "player": "Palash Kumar Das",
+    "timestamp": "2025-10-08T16:36:07.867Z"
+  },
+  {
+    "action": "start",
+    "player": "Partho Dutta",
+    "timestamp": "2025-10-08T16:36:15.555Z"
+  },
+  {
+    "action": "start",
+    "player": "Pradip Kumar Roy",
+    "timestamp": "2025-10-08T16:36:23.781Z"
+  },
+  {
+    "action": "start",
+    "player": "Prodip Kumar Roy",
+    "timestamp": "2025-10-08T16:38:50.607Z"
+  },
+  {
+    "action": "start",
+    "player": "Prashit Kumar Mondal",
+    "timestamp": "2025-10-08T16:39:01.721Z"
   },
   {
     "action": "start",
     "player": "Riasat Ali",
-    "timestamp": "2025-10-06T02:42:37.656Z"
+    "timestamp": "2025-10-08T16:39:05.996Z"
   },
   {
-    "action": "sold",
-    "player": "Riasat Ali",
-    "role": "Defender",
-    "team": "The Blue Bloods",
-    "finalPrice": 200,
-    "timestamp": "2025-10-06T02:44:54.677Z"
+    "action": "start",
+    "player": "Ripan Kumar Bachar",
+    "timestamp": "2025-10-08T16:39:17.376Z"
+  },
+  {
+    "action": "start",
+    "player": "S. M. Istiak Ahmed",
+    "timestamp": "2025-10-08T16:39:28.969Z"
+  },
+  {
+    "action": "start",
+    "player": "S. M. Rayhanul Islam",
+    "timestamp": "2025-10-08T16:39:33.345Z"
+  },
+  {
+    "action": "start",
+    "player": "Saleh Ahmed",
+    "timestamp": "2025-10-08T16:39:40.599Z"
+  },
+  {
+    "action": "start",
+    "player": "Satyajit Roy",
+    "timestamp": "2025-10-08T16:39:47.882Z"
+  },
+  {
+    "action": "start",
+    "player": "Shacchidananda Bachar",
+    "timestamp": "2025-10-08T16:39:52.873Z"
   },
   {
     "action": "start",
     "player": "Shovan Saha",
-    "timestamp": "2025-10-06T06:32:52.849Z"
+    "timestamp": "2025-10-08T16:39:56.511Z"
   },
   {
     "action": "start",
-    "player": "Riasat Ali",
-    "timestamp": "2025-10-06T16:17:21.490Z"
+    "player": "Sk. Masnun Rashad",
+    "timestamp": "2025-10-08T16:40:01.960Z"
+  },
+  {
+    "action": "start",
+    "player": "Subrata Kumar Biswas",
+    "timestamp": "2025-10-08T16:40:06.072Z"
+  },
+  {
+    "action": "start",
+    "player": "Subbroto Kumar Biswas",
+    "timestamp": "2025-10-08T16:43:07.185Z"
+  },
+  {
+    "action": "start",
+    "player": "Subbroto Kumar Biswas",
+    "timestamp": "2025-10-08T16:44:07.949Z"
+  },
+  {
+    "action": "start",
+    "player": "Subroto Kumar Podder",
+    "timestamp": "2025-10-08T16:44:49.846Z"
+  },
+  {
+    "action": "start",
+    "player": "Tonmoy Kumar Debnath",
+    "timestamp": "2025-10-08T16:45:04.125Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Mizanur Rahaman",
+    "timestamp": "2025-10-08T16:45:13.021Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Abu Taher Biswas",
+    "timestamp": "2025-10-08T16:45:19.675Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Atiqur Rahman",
+    "timestamp": "2025-10-08T16:55:28.284Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Billal Hossain",
+    "timestamp": "2025-10-08T16:55:48.326Z"
+  },
+  {
+    "action": "start",
+    "player": "Sk. Masnun Rashad",
+    "timestamp": "2025-10-08T16:55:56.808Z"
+  },
+  {
+    "action": "start",
+    "player": "Md. Saiful Islam",
+    "timestamp": "2025-10-08T16:56:09.221Z"
+  },
+  {
+    "action": "start",
+    "player": "Saleh Ahmed",
+    "timestamp": "2025-10-08T16:56:19.327Z"
+  },
+  {
+    "action": "start",
+    "player": "Saleh Ahmed",
+    "timestamp": "2025-10-08T17:04:44.012Z"
   }
 ]

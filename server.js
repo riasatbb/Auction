@@ -145,19 +145,8 @@ app.post('/sold', (req, res) => {
 
   teamBudgets[normalizedTeam] -= auctionState.finalPrice;
 
-  // 🔹 PATCHED: store full player object with role + price
-  teamRosters[normalizedTeam].push(auctionState.name); // keep only name
+  teamRosters[normalizedTeam].push(auctionState.name);
 
-history.push({
-  action: 'sold',
-  player: auctionState.name,
-  role: auctionState.role,
-  team: auctionState.soldTeam,
-  finalPrice: auctionState.finalPrice,
-  timestamp: new Date().toISOString()
-});
-
-  // 🔹 PATCHED: also include role in history
   history.push({
     action: 'sold',
     player: auctionState.name,
@@ -182,24 +171,46 @@ app.post('/unsold', (req, res) => {
   res.json({ success: true });
 });
 
+// ✅ FIXED UNDO FUNCTIONALITY
 app.post('/undo', (req, res) => {
   if (history.length === 0) return res.status(400).json({ error: 'No actions to undo!' });
   const lastAction = history.pop();
   const { action } = lastAction;
 
   if (action === 'sold') {
-    const { player, team, finalPrice } = lastAction;
+    const { player, team, finalPrice, role } = lastAction;
     const normalizedTeam = team.trim();
+
+    // Remove from team roster
     const teamRoster = teamRosters[normalizedTeam];
-    const index = teamRoster.findIndex(p => p.name === player);
-    if (index !== -1) teamRoster.splice(index, 1);
+    const playerIndex = teamRoster.findIndex(p => p === player);
+    if (playerIndex !== -1) teamRoster.splice(playerIndex, 1);
+
+    // Refund budget
     teamBudgets[normalizedTeam] += finalPrice;
-    auctionState.isBidding = true; // Restore bidding state
-    auctionState.isSold = false;
-    auctionState.isUnsold = false;
-    auctionState.currentPrice = finalPrice; // Restore last bidding price
-    auctionState.finalPrice = 0;
-    auctionState.soldTeam = '';
+
+    // Restore player back to available list if removed
+    const exists = players.some(p => p.name.trim() === player.trim());
+    if (!exists) {
+      players.push({
+        name: player,
+        role: role || '',
+        basePrice: finalPrice,
+        photo: 'https://via.placeholder.com/200'
+      });
+    }
+
+    // Restore auction state to previous
+    auctionState = {
+      ...auctionState,
+      isBidding: true,
+      isSold: false,
+      isUnsold: false,
+      soldTeam: '',
+      finalPrice: 0,
+      currentPrice: finalPrice
+    };
+
   } else if (action === 'increment') {
     auctionState.currentPrice = lastAction.oldPrice;
     auctionState.isBidding = true;
@@ -227,7 +238,10 @@ app.post('/undo', (req, res) => {
   }
 
   fs.writeFileSync(path.join(__dirname, 'data', 'history.json'), JSON.stringify(history, null, 2));
+
+  // Emit state again so display/control refresh instantly
   io.emit('update', auctionState);
+
   res.json({ success: true });
 });
 
@@ -261,24 +275,23 @@ io.on('connection', (socket) => {
 
   socket.on('disconnect', () => console.log('Client disconnected'));
 
-  // 🔹 PATCHED: use full objects from teamRosters, no need to rely on history
   socket.on('showPlayerChart', ({ team }) => {
-  const playerNames = auctionState.teamRosters[team] || [];
-  const teamLogo = auctionState.teamLogos[team] || '';
-  const purchased = playerNames.map((pName, idx) => {
-    const record = history.find(h => h.player === pName && h.team === team && h.action === 'sold');
-    return {
-      serial: idx + 1,
-      name: pName,
-      role: record?.role || '',
-      price: record?.finalPrice || 0
-    };
-  });
-  io.emit('displayPlayerChart', {
-    team,
-    logo: teamLogo,
-    purchased
-  });
+    const playerNames = auctionState.teamRosters[team] || [];
+    const teamLogo = auctionState.teamLogos[team] || '';
+    const purchased = playerNames.map((pName, idx) => {
+      const record = history.find(h => h.player === pName && h.team === team && h.action === 'sold');
+      return {
+        serial: idx + 1,
+        name: pName,
+        role: record?.role || '',
+        price: record?.finalPrice || 0
+      };
+    });
+    io.emit('displayPlayerChart', {
+      team,
+      logo: teamLogo,
+      purchased
+    });
   });
 });
 

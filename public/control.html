@@ -353,29 +353,33 @@
       });
     });
 
-    // Handle Reset Auction
-    document.getElementById('resetButton').addEventListener('click', () => {
-      fetch('/reset', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({})
-      })
-      .then(response => {
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-        return response.json();
-      })
-      .then(data => {
-        if (data.error) {
-          document.getElementById('error').textContent = data.error;
-        } else {
-          document.getElementById('error').textContent = 'Auction reset successfully!';
-          loadPlayers(); // Reload all players after reset
-        }
-      })
-      .catch(error => {
-        document.getElementById('error').textContent = `Failed to reset: ${error.message}`;
-      });
-    });
+    // Handle Reset Auction (with confirmation)
+document.getElementById('resetButton').addEventListener('click', () => {
+  const confirmReset = confirm('⚠️ Are you sure you want to reset the entire auction?\nThis will permanently clear all sold players, history, and budgets.');
+  if (!confirmReset) return; // User canceled
+
+  fetch('/reset', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({})
+  })
+  .then(response => {
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    return response.json();
+  })
+  .then(data => {
+    if (data.error) {
+      document.getElementById('error').textContent = data.error;
+    } else {
+      alert('✅ Auction reset successfully!');
+      document.getElementById('error').textContent = '';
+      loadPlayers(); // Reload all players after reset
+    }
+  })
+  .catch(error => {
+    document.getElementById('error').textContent = `Failed to reset: ${error.message}`;
+  });
+});
 
     // Handle Show Player Chart
     document.getElementById('showPlayerChart').addEventListener('click', () => {
